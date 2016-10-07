@@ -11,7 +11,7 @@ $(document).ready(function() {
         fieldId = $(this).siblings("input").attr('id');
         fieldValue = $("#"+fieldId+"_lkid").val();
         if(fieldValue != '000000000000000') {
-            window.location.href = "/"+fieldValue;
+            window.open("/"+fieldValue, '_blank');
         }
     });
 });
