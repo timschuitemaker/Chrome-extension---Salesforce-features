@@ -6,6 +6,14 @@ $(document).ready(function() {
 	$(".bDetailBlock .pbBody").append(t1 + t2);
 
 
+    createLookupLinks();
+    $(".goToLink").click(function() {
+        fieldId = $(this).siblings("input").attr('id');
+        fieldValue = $("#"+fieldId+"_lkid").val();
+        if(fieldValue != '000000000000000') {
+            window.location.href = "/"+fieldValue;
+        }
+    });
 });
 
 //http://salesforce.stackexchange.com/questions/27686/how-can-i-convert-a-15-char-id-value-into-an-18-char-id-value
@@ -28,3 +36,10 @@ function convertId(id) {
 function isUppercase(c) {
     return c >= "A" && c <= "Z";
 };
+
+function createLookupLinks() {
+    //console.log(chrome.extension.getURL('assets/images/icon.png'));
+    $(".lookupInput").each(function( index, value ) {
+        $(this).append('<a href="javascript:return false;" class="goToLink">⇨</a>');
+    });
+}
