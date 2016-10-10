@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Salesforce inject",
-  "description": "This extension will append an 18 char id in a page layout.",
+  "name": "Salesforce tools",
+  "description": "This extension has various features for Salesforce",
   "version": "1.0",
   "browser_action": {
     "default_icon": {
