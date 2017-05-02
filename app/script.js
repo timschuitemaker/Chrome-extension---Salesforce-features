@@ -2,7 +2,7 @@ $(document).ready(function() {
     var sfID = convertId(window.location.pathname.substring(1, 16));
 
     var t1 = '<div class="brandTertiaryBrd pbSubheader tertiaryPalette">\
-                <h3>Extra information<span class="titleSeparatingColon">:</span></h3>\
+                <h3>Additional information<span class="titleSeparatingColon">:</span></h3>\
               </div>';
 
     var t2 = '<div class="pbSubsection">\
